@@ -1,26 +1,27 @@
 import React from 'react';
-import { Outlet } from 'react-router-dom';
+import { Link, Outlet } from 'react-router-dom';
 import "./Menu.css"
 
 const Menu = () => {
   return (
-    <div class="menu">
-      <div class="logo-title">
-        <h1>Job Source</h1>
+    <div className="menu">
+      <div className="logo-title">
+        <h1><Link to="home">Job Source</Link></h1>
       </div>
-      <button class="menu-toggle" aria-label="Toggle Menu">
+      <button id="menu-toggle" className="menu-toggle" aria-label="Toggle Menu">
         <span></span>
         <span></span>
         <span></span>
       </button>
-      <nav class="menu-items">
+      <nav className="menu-items">
         <ul>
-          <li><a href="#">Item 3</a></li>
-          <li><a href="#">Item 2</a></li>
-          <li><a href="#">Item 1</a></li>
+          <li><Link to="home">Home</Link></li>
+          <li><Link to="statistics">Statistics</Link></li>
+          <li><Link to="appliedjobs">Applied Jobs</Link></li>
+          <li><Link to="blogs">Blogs</Link></li>
         </ul>
       </nav>
-      <div class="button">
+      <div className="button">
         <button>Start Applying</button>
       </div>
     </div>

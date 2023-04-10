@@ -1,15 +1,15 @@
 import React from 'react';
-import './Question.css'
+import './Blog.css'
 
-const Question = () => {
+const Blog = () => {
   return (
     <div>
       <h1 className='heading'>Some Questions to Know!</h1>
       <div className='question-container'>
         <div className="grid grid-cols-1 gap-4">
           <div className="bg-white rounded-lg shadow-md p-4">
-            <h2 className="text-lg font-semibold mb-4">1.Compare props vs state in react.</h2>
-            <p className="text-gray-700 mb-4" id="answer1">The difference comes in which component the data are owned. State is owned locally and the component itself updates it. Props are owned and read-only by a parent. Props can be changed only if an upstream shift is caused by a callback function passed on to the child.</p>
+            <h2 className="text-lg font-semibold mb-4">1.When should we use context api?</h2>
+            <p className="text-gray-700 mb-4" id="answer1">Context api is primarily used when some data needs to be accessible by many components at different nesting levels.</p>
           </div>
           <div className="bg-white rounded-lg shadow-md p-4">
             <h2 className="text-lg font-semibold mb-4">2.How does useState work?</h2>
@@ -29,4 +29,4 @@ const Question = () => {
   );
 };
 
-export default Question;
+export default Blog;

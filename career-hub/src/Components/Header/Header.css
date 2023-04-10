@@ -1,0 +1,56 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  background-color: #fff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: start;
+}
+
+.header-title {
+  margin: 0;
+  font-size: 60px;
+  font-weight: bold;
+  color: #000;
+  text-align: left;
+}
+
+.title-blue {
+  color: #7E90FE;
+}
+
+.header-description {
+  margin: 0;
+  font-size: 16px;
+  color: #333;
+  text-align: left;
+  margin-bottom: 16px;
+}
+
+.button {
+  flex-grow: 1;
+  text-align: right;
+  font-weight: bold;
+}
+
+.button button {
+  padding: 10px;
+  background: linear-gradient(90deg, #7E90FE 0%, #9873FF 100%);
+  color: #fff;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.header-right img {
+  max-width: 100%;
+  height: auto;
+}

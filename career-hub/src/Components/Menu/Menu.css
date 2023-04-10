@@ -8,6 +8,7 @@
 
 .logo-title {
   flex-grow: 1;
+  font-size: 26px;
 }
 
 .menu-toggle {
@@ -27,8 +28,10 @@
   margin: 5px 0;
 }
 
-.logo-title h1 {
+.logo-title h1 a {
   margin: 0;
+  text-decoration: none;
+  color: black;
 }
 
 .menu-items ul {
@@ -52,6 +55,7 @@
 .button {
   flex-grow: 1;
   text-align: right;
+  font-weight: bold;
 }
 
 .button button {
@@ -69,7 +73,7 @@
 @media (max-width: 767px) {
   .menu {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     position: relative;
   }
 

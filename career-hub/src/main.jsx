@@ -5,6 +5,10 @@ import './index.css';
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Menu from './Components/Menu/Menu';
 import Home from './Components/Home/Home';
+import Blog from './Components/Blog/Blog';
+import Header from './Components/Header/Header';
+
+
 
 
 
@@ -15,10 +19,11 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/home",
-        element: <div>this is hompage</div>
+        element: <Header></Header>
       },
       {
-
+        path: "/blogs",
+        element: <Blog></Blog>
       }
     ]
   },
