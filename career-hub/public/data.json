@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "logo": "https://www.linkpicture.com/q/business-1_4.png",
+    "name": "Creative Design",
+    "jobs": "100+"
+  },
+  {
+    "id": 2,
+    "logo": "https://www.linkpicture.com/q/accounts-1_12.png",
+    "name": "Accounts & Finance",
+    "jobs": "300"
+  },
+  {
+    "id": 3,
+    "logo": "https://www.linkpicture.com/q/social-media-1_5.png",
+    "name": "Marketing & Sales",
+    "jobs": "150"
+  },
+  {
+    "id": 4,
+    "logo": "https://www.linkpicture.com/q/chip-1_5.png",
+    "name": "Engineering Jobs",
+    "jobs": "224"
+  }
+]

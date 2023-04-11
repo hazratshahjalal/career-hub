@@ -1,7 +1,11 @@
 import React from 'react';
 import "./Header.css"
+import { useLoaderData } from 'react-router-dom';
+import Category from '../Category/Category';
 
 const Header = () => {
+  const categories = useLoaderData();
+  console.log(categories)
   return (
     <div>
       <div className="header">
@@ -16,6 +20,20 @@ const Header = () => {
         <div className="header-right">
           <img src="https://www.linkpicture.com/q/P3OLGJ1-copy-1_4.png" alt="Logo" />
         </div>
+      </div>
+      <div className="category-header">
+        <h1 className='category-title'>Job Category List</h1>
+        <p className="category-description">Explore thousands of job opportunities with all the information you need. <br />
+          It's your future. </p>
+      </div>
+
+      <div className="categories-container">
+        {
+          categories.map(category => <Category
+            key={category.id}
+            category={category}
+          ></Category>)
+        }
       </div>
     </div>
   );

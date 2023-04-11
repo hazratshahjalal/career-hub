@@ -54,3 +54,21 @@
   max-width: 100%;
   height: auto;
 }
+
+.categories-container {
+  display: flex;
+  align-items: start;
+  justify-content: space-around;
+  flex-direction: row;
+  row-gap: 2;
+
+}
+
+.category-header {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.category-title {
+  font-size: 46px;
+}

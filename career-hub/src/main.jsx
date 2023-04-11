@@ -7,6 +7,7 @@ import Menu from './Components/Menu/Menu';
 import Home from './Components/Home/Home';
 import Blog from './Components/Blog/Blog';
 import Header from './Components/Header/Header';
+import Statistics from './Components/Statistics/Statistics';
 
 
 
@@ -18,12 +19,23 @@ const router = createBrowserRouter([
     element: <Home></Home>,
     children: [
       {
+        path: "/",
+        element: <Header></Header>,
+        loader: async ({ params }) => {
+          return fetch(`/data.json`);
+        },
+      },
+      {
         path: "/home",
         element: <Header></Header>
       },
       {
         path: "/blogs",
         element: <Blog></Blog>
+      },
+      {
+        path: "/statistics",
+        element: <Statistics></Statistics>
       }
     ]
   },

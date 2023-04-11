@@ -1,0 +1,18 @@
+h2 img p {
+  text-align: left;
+}
+
+h2 {
+  margin: 10px 0;
+}
+
+.category-container {
+  background: #ececf5;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.job-number {
+  color: blue;
+  font-weight: bold;
+}
