@@ -78,17 +78,12 @@
   }
 
   .menu-items {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
+    display: flex;
     width: 100%;
     background-color: #f1f1f1;
     padding: 10px;
-  }
-
-  .menu-items.open {
-    display: block;
+    align-items: center;
+    justify-content: center;
   }
 
   .menu-items ul {

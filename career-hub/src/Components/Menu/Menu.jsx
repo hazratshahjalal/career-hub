@@ -8,11 +8,6 @@ const Menu = () => {
       <div className="logo-title">
         <h1><Link to="/">Job Source</Link></h1>
       </div>
-      <button id="menu-toggle" className="menu-toggle" aria-label="Toggle Menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
       <nav className="menu-items">
         <ul>
           <li><Link to="/">Home</Link></li>
