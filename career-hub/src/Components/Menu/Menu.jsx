@@ -6,7 +6,7 @@ const Menu = () => {
   return (
     <div className="menu">
       <div className="logo-title">
-        <h1><Link to="home">Job Source</Link></h1>
+        <h1><Link to="/">Job Source</Link></h1>
       </div>
       <button id="menu-toggle" className="menu-toggle" aria-label="Toggle Menu">
         <span></span>
@@ -15,7 +15,7 @@ const Menu = () => {
       </button>
       <nav className="menu-items">
         <ul>
-          <li><Link to="home">Home</Link></li>
+          <li><Link to="/">Home</Link></li>
           <li><Link to="statistics">Statistics</Link></li>
           <li><Link to="appliedjobs">Applied Jobs</Link></li>
           <li><Link to="blogs">Blogs</Link></li>
