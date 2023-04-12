@@ -12,7 +12,6 @@ const Details = () => {
   useEffect(() => {
     if (jobDetails) {
       const eachDetail = jobDetails.find(dt => dt.id == id);
-      console.log(eachDetail)
     }
   }, []);
 
