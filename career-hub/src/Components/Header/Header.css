@@ -3,8 +3,8 @@
   justify-content: space-between;
   align-items: center;
   padding: 16px;
-  background-color: #fff;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #f3f3f7be;
+
 }
 
 .header-left {
@@ -65,7 +65,7 @@
 }
 
 .category-header {
-  margin-top: 30px;
+  margin-top: 80px;
   margin-bottom: 10px;
 }
 
@@ -105,4 +105,10 @@
     flex-direction: column;
     gap: 10px;
   }
+}
+
+
+/* styles for featured job section */
+.featured-container {
+  margin-top: 80px;
 }

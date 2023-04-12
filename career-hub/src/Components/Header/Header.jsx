@@ -35,6 +35,11 @@ const Header = () => {
           ></Category>)
         }
       </div>
+      <div className="featured-container">
+        <h1 className="category-title">Featured Jobs</h1>
+        <p className="category-description">Explore thousands of job opportunities with all the information you need. <br />
+          It's your future. </p>
+      </div>
     </div>
   );
 };
