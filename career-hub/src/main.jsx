@@ -14,6 +14,7 @@ import Details from './Components/Details/Details';
 
 
 
+
 const router = createBrowserRouter([
   {
     path: '/',
@@ -35,7 +36,7 @@ const router = createBrowserRouter([
         element: <Statistics></Statistics>
       },
       {
-        path: "/detail/:id",
+        path: "/detail/:detailId",
         element: <Details></Details>,
         loader: ({ params }) => fetch("/featured.json")
       },

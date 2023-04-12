@@ -3,21 +3,24 @@ import "./Details.css"
 import { useLoaderData, useParams } from 'react-router-dom';
 
 const Details = () => {
+  const { detailId } = useParams();
 
-  const { id } = useParams();
-  const jobDetails = useLoaderData();
-  console.log(jobDetails)
+  const data = useLoaderData();
+  console.log(data)
 
-  const [jobDetail, setJobDetail] = useState({});
+  const [jobDetail, setJobDetail] = useState([]);
+
   useEffect(() => {
-    if (jobDetails) {
-      const eachDetail = jobDetails.find(dt => dt.id == id);
-    }
-  }, []);
+    const job = data.find(job => job.id === detailId);
+    setJobDetail(job);
+  }, [data, detailId]);
+
 
   return (
     <div>
-      <h1>job details </h1>
+      <h1 className='details-title'> Job Details </h1>
+      <h1>This is detail {detailId}</h1>
+      <p></p>
     </div>
   );
 };
