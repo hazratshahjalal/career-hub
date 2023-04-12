@@ -1,5 +1,6 @@
 import React from 'react';
 import "./Job.css"
+import { Link } from 'react-router-dom';
 
 const Job = (props) => {
   const { id, company_logo, job_title, company_name, remote_or_onsite, location, salary } = props.job;
@@ -15,7 +16,7 @@ const Job = (props) => {
         <p> Location: {location}</p>
         <p><span className='dollar'>$</span> Salary: {salary}</p>
       </div>
-      <button className="job-details">View Details</button>
+      <button className="job-details"><Link to="/blogs">View Details</Link></button>
     </div>
   );
 };
