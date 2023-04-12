@@ -8,6 +8,8 @@ const Details = () => {
   const data = useLoaderData();
   console.log(data)
 
+  const { id, company_logo, job_title, educational_requirements, experiences, contact_information, job_responsibility, job_description, company_name, remote_or_onsite, location, salary } = data;
+
   const [jobDetail, setJobDetail] = useState([]);
 
   useEffect(() => {
@@ -20,7 +22,9 @@ const Details = () => {
     <div>
       <h1 className='details-title'> Job Details </h1>
       <h1>This is detail {detailId}</h1>
-      <p></p>
+      <p>Job Title:{job_title} </p>
+      <p>Job Description: {job_description}</p>
+      <p>Job Responsibilities: {data.job_responsibility}</p>
     </div>
   );
 };
