@@ -16,7 +16,7 @@ const Blog = () => {
             <p className="text-gray-700 mb-4" id="answer1">Hooks are reusable functions. In React, a custom Hook is a function that starts with the word “use” and may call other Hooks.Custom React JS hooks are reusable functions that a React JS software developer can use to add special and unique functionality to the React applications. Usually, if there is a requirement to add a feature, one can install a third-party library and solve the problem.</p>
           </div>
           <div className="bg-white rounded-lg shadow-md p-4">
-            <h2 className="text-lg font-semibold mb-4">3.Explain useRef and its works.</h2>
+            <h2 className="text-lg font-semibold mb-4">3.What is useRef?</h2>
             <p className="text-gray-700 mb-4" id="answer1">useRef is a hook which returns an object with a current property set to the value passed to the hook. useRefs provide a way to access DOM nodes or React elements created in the render method. In the typical React dataflow, props are the only way that parent components interact with their children. To modify a child, you re-render it with new props.
             </p>
           </div>
