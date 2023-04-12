@@ -16,7 +16,7 @@ const Job = (props) => {
         <p> Location: {location}</p>
         <p><span className='dollar'>$</span> Salary: {salary}</p>
       </div>
-      <button className="job-details"><Link to="/blogs">View Details</Link></button>
+      <button className="job-details"><Link to="/detail/${id}">View Details</Link></button>
     </div>
   );
 };

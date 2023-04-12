@@ -9,6 +9,7 @@ import Blog from './Components/Blog/Blog';
 import Header from './Components/Header/Header';
 import Statistics from './Components/Statistics/Statistics';
 import NotFound from './Components/NotFound/NotFound';
+import Details from './Components/Details/Details';
 
 
 
@@ -32,6 +33,11 @@ const router = createBrowserRouter([
       {
         path: "/statistics",
         element: <Statistics></Statistics>
+      },
+      {
+        path: "/detail/:id",
+        element: <Details></Details>,
+        loader: ({ params }) => fetch("/featured.json")
       },
       {
         path: "*",

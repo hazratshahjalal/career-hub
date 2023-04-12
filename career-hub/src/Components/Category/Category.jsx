@@ -2,7 +2,6 @@ import React from 'react';
 import "./Category.css"
 
 const Category = ({ category }) => {
-  console.log(category)
   const { id, logo, name, jobs } = category;
   return (
     <div className='category-container'>
