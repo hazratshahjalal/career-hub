@@ -1,0 +1,32 @@
+.job-container {
+  background: #fdfcfc;
+  border: 1px solid #ece6e6;
+  border-radius: 7px;
+  width: 70%;
+  text-align: left;
+  padding: 20px 10px;
+}
+
+.type {
+  color: rgb(55, 55, 245);
+  padding: 5px 9px;
+  border: 1px solid #dbd6d6;
+  width: fit-content;
+  border-radius: 5px;
+}
+
+.location {
+  display: flex;
+  flex-direction: row;
+  font-size: 14px;
+}
+
+.dollar {
+  border: 1px solid #dbd6d6;
+  padding: 3px;
+  border-radius: 50%;
+  color: blue;
+  margin-left: 10px;
+}
+
+.job-details {}

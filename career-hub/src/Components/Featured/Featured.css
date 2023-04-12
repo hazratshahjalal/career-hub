@@ -1,0 +1,20 @@
+.button-more {
+  padding: 10px;
+  background: linear-gradient(90deg, #7E90FE 0%, #9873FF 100%);
+  color: #fff;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 40px;
+}
+
+
+
+.jobs-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 45;
+  row-gap: 26px;
+  justify-items: center;
+}

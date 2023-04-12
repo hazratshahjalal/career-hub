@@ -1,11 +1,13 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import "./Header.css"
 import { useLoaderData } from 'react-router-dom';
 import Category from '../Category/Category';
+import Featured from '../Featured/Featured';
+
 
 const Header = () => {
   const categories = useLoaderData();
-  console.log(categories)
+
   return (
     <div>
       <div className="header">
@@ -39,6 +41,11 @@ const Header = () => {
         <h1 className="category-title">Featured Jobs</h1>
         <p className="category-description">Explore thousands of job opportunities with all the information you need. <br />
           It's your future. </p>
+        <div>
+          {
+            <Featured></Featured>
+          }
+        </div>
       </div>
     </div>
   );
