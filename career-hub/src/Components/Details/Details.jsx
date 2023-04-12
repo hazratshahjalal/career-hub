@@ -13,7 +13,7 @@ const Details = () => {
   const [jobDetail, setJobDetail] = useState([]);
 
   useEffect(() => {
-    const job = data.find(job => job.id === detailId);
+    const job = data.find(job => job.id == detailId);
     setJobDetail(job);
   }, [data, detailId]);
 
@@ -24,7 +24,7 @@ const Details = () => {
       <h1>This is detail {detailId}</h1>
       <p>Job Title:{job_title} </p>
       <p>Job Description: {job_description}</p>
-      <p>Job Responsibilities: {data.job_responsibility}</p>
+      <p>Job Responsibilities: {job_responsibility}</p>
     </div>
   );
 };
